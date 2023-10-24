@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Text Adventure Game</title>
+  </head>
+  <body>
+    <div id="output"></div>
+    <input type="text" id="input" placeholder="Deine Antwort" />
+    <button id="submit">Bestätigen</button>
+
+    <script>
+      const outputElement = document.getElementById("output");
+      const inputElement = document.getElementById("input");
+      const submitButton = document.getElementById("submit");
+
+      let player = {
+        name: "",
+        health: 100,
+      };
+
+      submitButton.addEventListener("click", startGame);
+
+      function printOutput(text) {
+        outputElement.innerHTML += "<p>" + text + "</p>";
+      }
+
+      function askQuestion(question) {
+        return new Promise((resolve) => {
+          printOutput(question);
+          submitButton.addEventListener("click", function handler() {
+            submitButton.removeEventListener("click", handler);
+            resolve(inputElement.value);
+          });
+        });
+      }
+
+      async function startGame() {
+        printOutput("Willkommen zum Abenteuerspiel!");
+        player.name = await askQuestion("Wie lautet dein Name?");
+        printOutput(
+          `Hallo, ${player.name}! Du beginnst mit ${player.health} Gesundheit.`
+        );
+        printOutput(
+          "Du befindest dich in einem dunklen Wald. Du siehst einen Pfad nach links und einen nach rechts."
+        );
+
+        const choice = await askQuestion(
+          "Möchtest du nach links oder nach rechts gehen?"
+        );
+
+        if (choice === "links") {
+          printOutput("Du gehst nach links und findest eine Truhe.");
+          const openChest = await askQuestion(
+            "Möchtest du die Truhe öffnen? (ja/nein)"
+          );
+          if (openChest === "ja") {
+            printOutput(
+              "Du findest einen Heiltrank in der Truhe und fügst 20 Gesundheit hinzu."
+            );
+            player.health += 20;
+          } else {
+            printOutput("Du gehst weiter, ohne die Truhe zu öffnen.");
+          }
+        } else if (choice === "rechts") {
+          printOutput(
+            "Du gehst nach rechts und triffst auf einen wilden Bären."
+          );
+          printOutput("Du hast zwei Optionen: kämpfen oder weglaufen.");
+          const choice2 = await askQuestion(
+            "Was möchtest du tun? (kämpfen/weglaufen)"
+          );
+          if (choice2 === "kämpfen") {
+            printOutput(
+              "Du kämpfst gegen den Bären, aber er ist zu mächtig. Du verlierst 50 Gesundheit."
+            );
+            player.health -= 50;
+          } else {
+            printOutput(
+              "Du fliehst vor dem Bären und kehrst zum Anfang des Waldes zurück."
+            );
+          }
+        }
+
+        printOutput(`Du hast jetzt ${player.health} Gesundheit.`);
+
+        if (player.health <= 0) {
+          printOutput(
+            "Du hast alle Gesundheit verloren. Das Spiel ist vorbei."
+          );
+        } else {
+          printOutput("Glückwunsch, du hast das Abenteuerspiel gemeistert!");
+        }
+      }
+    </script>
+  </body>
+</html>
