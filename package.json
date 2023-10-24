@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "ascii-art": "^2.8.5",
+    "gradient-string": "^2.0.2"
+  }
+}
