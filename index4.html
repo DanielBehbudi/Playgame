@@ -1,197 +1,66 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8" />
-    <title .style.bold>ChatDoc - Ihr automatischer Gesundheitsassistent</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        background-color: #f3f3f3;
-        text-align: center;
-      }
-      #container {
-        max-width: 800px;
-        margin: 0 auto;
-        text-align: left;
-        background-color: #fff;
-        padding: 20px;
-        border-radius: 10px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-      }
-      #banner {
-        background: linear-gradient(to right, #0077cc, #00aaff);
-        color: white;
-        padding: 10px;
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
-      }
-      #banner h1 {
-        font-size: 28px;
-        margin: 0;
-        padding: 10px 0;
-        font-weight: bold;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
-      }
-      #output {
-        padding: 10px;
-        border-bottom: 1px solid #ccc;
-        min-height: 200px;
-      }
-      #input {
-        width: 80%;
-        padding: 10px;
-        margin: 10px 0;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-      }
-      #submit {
-        padding: 10px 20px;
-        background-color: #0077cc;
-        color: white;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-      }
-    </style>
+    <title>ChatBot</title>
   </head>
   <body>
-    <h1>ChatDoc - Ihr automatischer Gesundheitsassistent</h1>
-    <div id="output"></div>
-    <input
-      type="text"
-      id="input"
-      placeholder="Geben Sie Ihre Frage ein und drücken Sie Enter"
-    />
-    <button id="submit">Senden</button>
+    <div id="chat-box">
+      <!-- Chat messages will be displayed here -->
+    </div>
+    <input type="text" id="user-input" placeholder="Type your message..." />
+    <button id="send-button">Send</button>
 
     <script>
-      const outputElement = document.getElementById("output");
-      const inputElement = document.getElementById("input");
-      const submitButton = document.getElementById("submit");
+      const chatBox = document.getElementById("chat-box");
+      const userInput = document.getElementById("user-input");
+      const sendButton = document.getElementById("send-button");
+
+      function displayMessage(message) {
+        const messageElement = document.createElement("p");
+        messageElement.textContent = message;
+        chatBox.appendChild(messageElement);
+      }
 
       function chatWithDrBot(question) {
         question = question.toLowerCase();
+        // Your chatbot logic goes here
+        // ...
 
-        if (question.includes("hallo") || question.includes("guten tag")) {
-          printOutput("ChatDoc: Hallo! Wie kann ich Ihnen helfen?");
-        } else if (question.includes("wie geht es dir")) {
-          printOutput(
-            "ChatDoc: Mir geht es gut, danke! Wie kann ich Ihnen helfen?"
-          );
-        } else if (question.includes("wer bist du")) {
-          printOutput(
-            "ChatDoc: Ich bin ChatDoc, Ihr automatischer Gesundheitsassistent."
-          );
-        } else if (question.includes("auf wiedersehen")) {
-          printOutput(
-            "ChatDoc: Auf Wiedersehen! Falls Sie weitere Fragen haben, stehe ich Ihnen gerne zur Verfügung."
-          );
-          inputElement.disabled = true;
-        } else if (question.includes("kopfschmerzen")) {
-          printOutput(
-            "ChatDoc: Kopfschmerzen können viele Ursachen haben, einschließlich Stress und Dehydrierung. Ruhe und ausreichend Flüssigkeitszufuhr können helfen."
-          );
-        } else if (
-          question.includes("husten") ||
-          question.includes("erkaeltung")
-        ) {
-          printOutput(
-            "ChatDoc: Bei anhaltendem Husten oder Erkältungssymptomen sollten Sie einen Arzt konsultieren."
-          );
-        } else if (question.includes("bauchschmerzen")) {
-          printOutput(
-            "ChatDoc: Bauchschmerzen können auf verschiedene Magen-Darm-Probleme hinweisen. Eine ausgewogene Ernährung und Ruhe sind wichtig."
-          );
-        } else if (question.includes("rueckenschmerzen")) {
-          printOutput(
-            "ChatDoc: Rückenschmerzen können durch schlechte Haltung verursacht werden. Ergonomie am Arbeitsplatz und Dehnübungen können helfen."
-          );
-        } else if (question.includes("fieber")) {
-          printOutput(
-            "ChatDoc: Wenn Sie Fieber haben, ruhen Sie sich aus und trinken Sie viel Flüssigkeit. Konsultieren Sie einen Arzt bei hohem Fieber."
-          );
+        // Example responses
+        if (question.includes("hello")) {
+          displayMessage("ChatDoc: Hello! How can I assist you?");
+        } else if (question.includes("goodbye")) {
+          displayMessage("ChatDoc: Goodbye!");
         } else {
-          printOutput(
-            "ChatDoc: Es tut mir leid, ich habe Ihre Anfrage nicht verstanden."
-          );
-          printOutput(
-            "                             ──────────────────────────────────"
-          );
-          printOutput(
-            "                             ─────────▄▄───────────────────▄▄──"
-          );
-          printOutput(
-            "                             ──────────▀█───────────────────▀█─"
-          );
-          printOutput(
-            "                             ──────────▄█───────────────────▄█─"
-          );
-          printOutput(
-            "                             ──█████████▀───────────█████████▀─"
-          );
-          printOutput(
-            "                             ───▄██████▄─────────────▄██████▄──"
-          );
-          printOutput(
-            "                             ─▄██▀────▀██▄─────────▄██▀────▀██▄"
-          );
-          printOutput(
-            "                             ─██────────██─────────██────────██"
-          );
-          printOutput(
-            "                             ─██───██───██─────────██───██───██"
-          );
-          printOutput(
-            "                             ─██────────██─────────██────────██"
-          );
-          printOutput(
-            "                             ──██▄────▄██───────────██▄────▄██─"
-          );
-          printOutput(
-            "                             ───▀██████▀─────────────▀██████▀──"
-          );
-          printOutput(
-            "                             ──────────────────────────────────"
-          );
-          printOutput(
-            "                             ──────────────────────────────────"
-          );
-          printOutput(
-            "                             ──────────────────────────────────"
+          displayMessage(
+            "ChatDoc: I don't understand. Please ask another question."
           );
         }
       }
 
-      function printOutput(text) {
-        outputElement.innerHTML += "<p>" + text + "</p>";
+      function processUserInput() {
+        const userMessage = userInput.value;
+        displayMessage(`You: ${userMessage}`);
+        chatWithDrBot(userMessage);
+        userInput.value = ""; // Clear the input field
       }
 
-      submitButton.addEventListener("click", function () {
-        const question = inputElement.value;
-        if (question.trim() !== "") {
-          printOutput("Sie: " + question);
-          chatWithDrBot(question);
-          inputElement.value = "";
+      sendButton.addEventListener("click", processUserInput);
+
+      userInput.addEventListener("keydown", (e) => {
+        if (e.key === "Enter") {
+          processUserInput();
         }
       });
 
-      inputElement.addEventListener("keyup", function (event) {
-        if (event.key === "Enter") {
-          const question = inputElement.value;
-          if (question.trim() !== "") {
-            printOutput("Sie: " + question);
-            chatWithDrBot(question);
-            inputElement.value = "";
-          }
-        }
-      });
-
-      printOutput(
-        "ChatDoc: Hallo! Ich bin ChatDoc, Ihr automatischer Gesundheitsassistent."
+      // Initial greeting
+      displayMessage(
+        "ChatDoc: Hello! I'm ChatDoc, your automatic health assistant."
       );
-      printOutput(
-        'Sie können Fragen zu Ihrer Gesundheit stellen oder Geben Sie "Auf Wiedersehen" ein, um das Gespräch zu beenden.'
+      displayMessage(
+        "ChatDoc: You can ask health-related questions or type 'Goodbye' to end the conversation."
       );
+      displayMessage("ChatDoc:");
     </script>
   </body>
 </html>

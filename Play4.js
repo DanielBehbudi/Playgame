@@ -3,6 +3,7 @@ const rl = readline.createInterface({
   input: process.stdin,
   output: process.stdout,
 });
+const gradient = require("gradient-string");
 
 function chatWithDrBot(question) {
   question = question.toLowerCase();
@@ -24,10 +25,178 @@ function chatWithDrBot(question) {
     console.log(
       "ChatDoc: Kopfschmerzen können viele Ursachen haben, einschließlich Stress und Dehydrierung. Ruhe und ausreichend Flüssigkeitszufuhr können helfen."
     );
-  } else if (question.includes("husten") || question.includes("erkaeltung")) {
+    console.log(
+      gradient.passion(
+        "                                           ███████████████████████████████████"
+      )
+    );
+    console.log(
+      gradient.passion(
+        "                                           ███████████████████████████████████"
+      )
+    );
+    console.log(
+      gradient.passion(
+        "                                           █████████████▒▒▒▒▒▒▒▒▒█████████████"
+      )
+    );
+    console.log(
+      gradient.passion(
+        "                                           █████████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒█████████"
+      )
+    );
+    console.log(
+      gradient.passion(
+        "                                           ███████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒███████"
+      )
+    );
+    console.log(
+      gradient.passion(
+        "                                           ██████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒██████"
+      )
+    );
+    console.log(
+      gradient.passion(
+        "                                           █████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒█████"
+      )
+    );
+    console.log(
+      gradient.passion(
+        "                                           █████▒▒▒▒█▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒█▒▒▒▒█████"
+      )
+    );
+    console.log(
+      gradient.passion(
+        "                                           ████▒▒▒▒███▒▒▒▒▒▒▒▒▒▒▒▒▒███▒▒▒▒████"
+      )
+    );
+    console.log(
+      gradient.passion(
+        "                                           ███▒▒▒▒██████▒▒▒▒▒▒▒▒▒██████▒▒▒▒███"
+      )
+    );
+    console.log(
+      gradient.passion(
+        "                                           ███▒▒▒███▐▀███▒▒▒▒▒▒▒███▀▌███▒▒▒███"
+      )
+    );
+    console.log(
+      gradient.passion(
+        "                                           ███▒▒▒██▄▐▌▄███▒▒▒▒▒███▄▐▌▄██▒▒▒███"
+      )
+    );
+    console.log(
+      gradient.passion(
+        "                                           ███▒▒▒▒██▌███▒▒▒█▒█▒▒▒███▐██▒▒▒▒███"
+      )
+    );
+    console.log(
+      gradient.passion(
+        "                                           ██▒▒▒▒▒▒███▒▒▒▒██▒██▒▒▒▒███▒▒▒▒▒▒██"
+      )
+    );
+    console.log(
+      gradient.passion(
+        "                                           █▒▒▒▒▒▒▒▒█▒▒▒▒██▒▒▒██▒▒▒▒█▒▒▒▒▒▒▒▒█"
+      )
+    );
+    console.log(
+      gradient.passion(
+        "                                           █▒▒▒▒▒▒▒▒▒▒▒▒▒█▒▒▒▒▒█▒▒▒▒▒▒▒▒▒▒▒▒▒█"
+      )
+    );
+    console.log(
+      gradient.passion(
+        "                                           █▒▒▒▒█▒▒█▒▒▒▒██▒▒▒▒▒██▒▒▒▒█▒▒█▒▒▒▒█"
+      )
+    );
+    console.log(
+      gradient.passion(
+        "                                           ██▒▒▒█▒▒█▒▒▒▒█▒██▒██▒█▒▒▒▒█▒▒█▒▒▒██"
+      )
+    );
+    console.log(
+      gradient.passion(
+        "                                           ███▒█▒▒█▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒█▒▒█▒███"
+      )
+    );
+    console.log(
+      gradient.passion(
+        "                                           █████▒▒█▒▒▒▐███████████▌▒▒▒█▒▒█████"
+      )
+    );
+    console.log(
+      gradient.passion(
+        "                                           ███████▒▒▒▐█▀██▀███▀██▀█▌▒▒▒███████"
+      )
+    );
+    console.log(
+      gradient.passion(
+        "                                           ███████▒▒▒▒█▐██▐███▌██▌█▒▒▒▒███████"
+      )
+    );
+    console.log(
+      gradient.passion(
+        "                                           ███████▒▒▒▒▒▐▒▒▐▒▒▒▌▒▒▌▒▒▒▒▒███████"
+      )
+    );
+    console.log(
+      gradient.passion(
+        "                                           ████████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒████████"
+      )
+    );
+    console.log(
+      gradient.passion(
+        "                                           ████████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒████████"
+      )
+    );
+    console.log(
+      gradient.passion(
+        "                                           █████████▒▒█▒█▒▒▒█▒▒▒█▒█▒▒█████████"
+      )
+    );
+    console.log(
+      gradient.passion(
+        "                                           █████████▒██▒█▒▒▒█▒▒▒█▒██▒█████████"
+      )
+    );
+    console.log(
+      gradient.passion(
+        "                                           ██████████████▒▒███▒▒██████████████"
+      )
+    );
+    console.log(
+      gradient.passion(
+        "                                           ██████████████▒█████▒██████████████"
+      )
+    );
+  } else if (question.includes("husten") || question.includes("erkältung")) {
     console.log(
       "ChatDoc: Bei anhaltendem Husten oder Erkältungssymptomen sollten Sie einen Arzt konsultieren."
     );
+    console.log(
+      gradient.passion("                                           ")
+    );
+
+    console.log(gradient.passion(" ░░░░░░░░░░░░░░░░░░░▄▄▄████████░░░░░░░░░"));
+    console.log(gradient.passion(" ░░░░░░░░░░░░░░░░▄▄█████████████░░░░▄███"));
+    console.log(gradient.passion(" ░░░░░░░░░░░░░░▄████████████████▄▄████▀░"));
+    console.log(gradient.passion(" ░░░░░░░░░░░░░░▀████████████████████▀░░░"));
+    console.log(gradient.passion(" ░░░░░░░░░░░░░░░███████████████▀░█▀░░░░░"));
+    console.log(gradient.passion(" ░░░░░░░░░░░░░░░▀█░░░░▀▀▀▀▀░░░░░░░▀▄░░░░"));
+    console.log(gradient.passion(" ░░░░░░░░░░░░░░░░█░░░░░░░░▀▀▀▄░░░░▀█▄░░░"));
+    console.log(gradient.passion(" ░░░░░░░░░░░░░░░░█░░░░░▄▄▀██▀█░▄▀▀█▀█░░░"));
+    console.log(gradient.passion(" ░░░░░░░░░░░░░░░▄█▄░░░░▀▄░░░▄▀░░▀▄▄▄▀░░░"));
+    console.log(gradient.passion(" ░░░░░░░░░░░░░░█▄▄▄░░░░░░███▄▄▄▄░░░█▄░░░"));
+    console.log(gradient.passion(" ░░░░░░░░░░░░░░▀▄█▄░░░░░░▄▀░░░░▀▀▀▀░░▀▄░"));
+    console.log(gradient.passion(" ░░░░░░░░░░░░░░▄▄█░░░░░░█░░░░░░░░░░░░░░█"));
+    console.log(gradient.passion(" ░░░░░░░░░░░░░████░░░░░█░░▄▀▄▀▄▀▄▀▄▀▄▀▄█"));
+    console.log(gradient.passion(" ░░░░░░░░░▄▄█████░░░░░░▀▄▀░░░░░░▄█░░░░░░"));
+    console.log(gradient.passion(" ░░░░░░▄█████████▄░░░░░░░░░░░░▄█░░░░░░░░"));
+    console.log(gradient.passion(" ░░░▄▄███████████▀▀▄▄▄░░░░░▄███▄░░░░░░░░"));
+    console.log(gradient.passion(" ░▄██████████████░░░░▀▀▀▀▀▀▀░████▄░░░░░░"));
+    console.log(gradient.passion(" ▄███████████████░░░░░░░░░░░░█████▄░░░░░"));
+    console.log(gradient.passion(" █████████████████▄▄▄▄▄▄▄▄▄▄▄██████▄░░░░"));
   } else if (question.includes("bauchschmerzen")) {
     console.log(
       "ChatDoc: Bauchschmerzen können auf verschiedene Magen-Darm-Probleme hinweisen. Eine ausgewogene Ernährung und Ruhe sind wichtig."
@@ -36,32 +205,114 @@ function chatWithDrBot(question) {
     console.log(
       "ChatDoc: Rückenschmerzen können durch schlechte Haltung verursacht werden. Ergonomie am Arbeitsplatz und Dehnübungen können helfen."
     );
+        console.log(
+      gradient.passion("                                           ")
+    );
+
+    console.log(gradient.passion(" ░░░░░░░░░░░░░░░░░░░▄▄▄████████░░░░░░░░░"));
+    console.log(gradient.passion(" ░░░░░░░░░░░░░░░░▄▄█████████████░░░░▄███"));
+    console.log(gradient.passion(" ░░░░░░░░░░░░░░▄████████████████▄▄████▀░"));
+    console.log(gradient.passion(" ░░░░░░░░░░░░░░▀████████████████████▀░░░"));
+    console.log(gradient.passion(" ░░░░░░░░░░░░░░░███████████████▀░█▀░░░░░"));
+    console.log(gradient.passion(" ░░░░░░░░░░░░░░░▀█░░░░▀▀▀▀▀░░░░░░░▀▄░░░░"));
+    console.log(gradient.passion(" ░░░░░░░░░░░░░░░░█░░░░░░░░▀▀▀▄░░░░▀█▄░░░"));
+    console.log(gradient.passion(" ░░░░░░░░░░░░░░░░█░░░░░▄▄▀██▀█░▄▀▀█▀█░░░"));
+    console.log(gradient.passion(" ░░░░░░░░░░░░░░░▄█▄░░░░▀▄░░░▄▀░░▀▄▄▄▀░░░"));
+    console.log(gradient.passion(" ░░░░░░░░░░░░░░█▄▄▄░░░░░░███▄▄▄▄░░░█▄░░░"));
+    console.log(gradient.passion(" ░░░░░░░░░░░░░░▀▄█▄░░░░░░▄▀░░░░▀▀▀▀░░▀▄░"));
+    console.log(gradient.passion(" ░░░░░░░░░░░░░░▄▄█░░░░░░█░░░░░░░░░░░░░░█"));
+    console.log(gradient.passion(" ░░░░░░░░░░░░░████░░░░░█░░▄▀▄▀▄▀▄▀▄▀▄▀▄█"));
+    console.log(gradient.passion(" ░░░░░░░░░▄▄█████░░░░░░▀▄▀░░░░░░▄█░░░░░░"));
+    console.log(gradient.passion(" ░░░░░░▄█████████▄░░░░░░░░░░░░▄█░░░░░░░░"));
+    console.log(gradient.passion(" ░░░▄▄███████████▀▀▄▄▄░░░░░▄███▄░░░░░░░░"));
+    console.log(gradient.passion(" ░▄██████████████░░░░▀▀▀▀▀▀▀░████▄░░░░░░"));
+    console.log(gradient.passion(" ▄███████████████░░░░░░░░░░░░█████▄░░░░░"));
+    console.log(gradient.passion(" █████████████████▄▄▄▄▄▄▄▄▄▄▄██████▄░░░░"));
   } else if (question.includes("fieber")) {
     console.log(
       "ChatDoc: Wenn Sie Fieber haben, ruhen Sie sich aus und trinken Sie viel Flüssigkeit. Konsultieren Sie einen Arzt bei hohem Fieber."
     );
+    console.log(
+      gradient.passion("                                           ")
+    );
+
+    console.log(gradient.passion(" ░░░░░░░░░░░░░░░░░░░▄▄▄████████░░░░░░░░░"));
+    console.log(gradient.passion(" ░░░░░░░░░░░░░░░░▄▄█████████████░░░░▄███"));
+    console.log(gradient.passion(" ░░░░░░░░░░░░░░▄████████████████▄▄████▀░"));
+    console.log(gradient.passion(" ░░░░░░░░░░░░░░▀████████████████████▀░░░"));
+    console.log(gradient.passion(" ░░░░░░░░░░░░░░░███████████████▀░█▀░░░░░"));
+    console.log(gradient.passion(" ░░░░░░░░░░░░░░░▀█░░░░▀▀▀▀▀░░░░░░░▀▄░░░░"));
+    console.log(gradient.passion(" ░░░░░░░░░░░░░░░░█░░░░░░░░▀▀▀▄░░░░▀█▄░░░"));
+    console.log(gradient.passion(" ░░░░░░░░░░░░░░░░█░░░░░▄▄▀██▀█░▄▀▀█▀█░░░"));
+    console.log(gradient.passion(" ░░░░░░░░░░░░░░░▄█▄░░░░▀▄░░░▄▀░░▀▄▄▄▀░░░"));
+    console.log(gradient.passion(" ░░░░░░░░░░░░░░█▄▄▄░░░░░░███▄▄▄▄░░░█▄░░░"));
+    console.log(gradient.passion(" ░░░░░░░░░░░░░░▀▄█▄░░░░░░▄▀░░░░▀▀▀▀░░▀▄░"));
+    console.log(gradient.passion(" ░░░░░░░░░░░░░░▄▄█░░░░░░█░░░░░░░░░░░░░░█"));
+    console.log(gradient.passion(" ░░░░░░░░░░░░░████░░░░░█░░▄▀▄▀▄▀▄▀▄▀▄▀▄█"));
+    console.log(gradient.passion(" ░░░░░░░░░▄▄█████░░░░░░▀▄▀░░░░░░▄█░░░░░░"));
+    console.log(gradient.passion(" ░░░░░░▄█████████▄░░░░░░░░░░░░▄█░░░░░░░░"));
+    console.log(gradient.passion(" ░░░▄▄███████████▀▀▄▄▄░░░░░▄███▄░░░░░░░░"));
+    console.log(gradient.passion(" ░▄██████████████░░░░▀▀▀▀▀▀▀░████▄░░░░░░"));
+    console.log(gradient.passion(" ▄███████████████░░░░░░░░░░░░█████▄░░░░░"));
+    console.log(gradient.passion(" █████████████████▄▄▄▄▄▄▄▄▄▄▄██████▄░░░░"));
   } else {
     console.log(
       "ChatDoc: Es tut mir leid, ich habe Ihre Anfrage nicht verstanden."
     );
-    console.log("                             ──────────────────────────────────");
-    console.log("                             ─────────▄▄───────────────────▄▄──");
-    console.log("                             ──────────▀█───────────────────▀█─");
-    console.log("                             ──────────▄█───────────────────▄█─");
-    console.log("                             ──█████████▀───────────█████████▀─");
-    console.log("                             ───▄██████▄─────────────▄██████▄──");
-    console.log("                             ─▄██▀────▀██▄─────────▄██▀────▀██▄");
-    console.log("                             ─██────────██─────────██────────██");
-    console.log("                             ─██───██───██─────────██───██───██");
-    console.log("                             ─██────────██─────────██────────██");
-    console.log("                             ──██▄────▄██───────────██▄────▄██─");
-    console.log("                             ───▀██████▀─────────────▀██████▀──");
-    console.log("                             ──────────────────────────────────");
-    console.log("                             ──────────────────────────────────");
-    console.log("                             ──────────────────────────────────");
-    console.log("                             ───────────█████████████──────────");
-    console.log("                             ──────────────────────────────────");
-    console.log("                             ──────────────────────────────────");
+    console.log(
+      "                             ──────────────────────────────────"
+    );
+    console.log(
+      "                             ─────────▄▄───────────────────▄▄──"
+    );
+    console.log(
+      "                             ──────────▀█───────────────────▀█─"
+    );
+    console.log(
+      "                             ──────────▄█───────────────────▄█─"
+    );
+    console.log(
+      "                             ──█████████▀───────────█████████▀─"
+    );
+    console.log(
+      "                             ───▄██████▄─────────────▄██████▄──"
+    );
+    console.log(
+      "                             ─▄██▀────▀██▄─────────▄██▀────▀██▄"
+    );
+    console.log(
+      "                             ─██────────██─────────██────────██"
+    );
+    console.log(
+      "                             ─██───██───██─────────██───██───██"
+    );
+    console.log(
+      "                             ─██────────██─────────██────────██"
+    );
+    console.log(
+      "                             ──██▄────▄██───────────██▄────▄██─"
+    );
+    console.log(
+      "                             ───▀██████▀─────────────▀██████▀──"
+    );
+    console.log(
+      "                             ──────────────────────────────────"
+    );
+    console.log(
+      "                             ──────────────────────────────────"
+    );
+    console.log(
+      "                             ──────────────────────────────────"
+    );
+    console.log(
+      "                             ───────────█████████████──────────"
+    );
+    console.log(
+      "                             ──────────────────────────────────"
+    );
+    console.log(
+      "                             ──────────────────────────────────"
+    );
   }
 }
 
@@ -71,7 +322,6 @@ console.log(
 console.log(
   'Sie können Fragen zu Ihrer Gesundheit stellen oder Geben Sie "Auf Wiedersehen" ein, um das Gespräch zu beenden.'
 );
-const gradient = require("gradient-string");
 console.log(
   gradient.instagram(
     "                           ▄████▄   ██░ ██  ▄▄▄     ▄▄▄█████▓▓█████▄  ▒█████   ▄████▄"
